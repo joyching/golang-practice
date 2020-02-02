@@ -1,9 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"github.com/joyching/golang-practice/config"
+	"github.com/joyching/golang-practice/server"
 )
 
 func main() {
-	fmt.Println("Hello world")
+	config.Init()
+
+	server.Init()
 }
