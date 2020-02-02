@@ -1,0 +1,5 @@
+/vendor/*
+!/vendor/vendor.json
+/stderr
+/data
+.DS_Store

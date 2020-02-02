@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    image: kanaheijoy/golang-dev:latest
+    ports:
+      - 30030:30030
+    volumes:
+      - ./:/go/src/github.com/joyching/golang-practice
+    tty: true
