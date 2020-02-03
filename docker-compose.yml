@@ -7,3 +7,17 @@ services:
     volumes:
       - ./:/go/src/github.com/joyching/golang-practice
     tty: true
+  mysql:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 30040:3306
+    command:
+      - --innodb-buffer-pool-size=64M
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "secret"
+      MYSQL_DATABASE: "homestead"
+      MYSQL_USER: "homestead"
+      MYSQL_PASSWORD: "secret"
