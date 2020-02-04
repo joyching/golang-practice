@@ -15,17 +15,12 @@
 $ docker-compose up -d
 ```
 
-2. Install dependencies which needed
-```
-$ docker-compose exec api govendor sync
-```
-
-3. Start to run api service
+2. Start to run api service
 ```
 $ docker-compose exec api go run main.go
 ```
 
-4. Stop environment
+3. Stop environment
 ```
 $ docker-compose down
 ```
